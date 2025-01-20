@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>{% block title %} StartSite {% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Welocome to my site!</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Главная</a></li>
+                    <li><a href="{{ url_for('about') }}">О нас</a></li>
+                    <li><a href="{{ url_for('contacts') }}">Контакты</a></li>
+                    <li><a href="{{ url_for('comments') }}">Комментарии</a></li>  <!-- Новая ссылка -->
+                </ul>
+            </nav>
+    </header>
+    <hr>
+    <main>
+        {% block content %}
+
+        {% endblock %}
+    </main>
+    <hr>
+    <footer>
+        <p>blablabla@gmail.com</p>
+        <p>&copy; 2025 It-cube</p>
+    </footer>
+</body>
+</html>
