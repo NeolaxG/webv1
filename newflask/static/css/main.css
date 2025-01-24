@@ -1,0 +1,27 @@
+/*Header styles*/
+header{
+    position: sticky; /*закрепление позиции */
+    top: 0; /*закрепление в центре сверху */
+    z-index: 100; /*закрепляем поверх других элементов (100-слой) */
+    background-color: white;
+    padding: 10px; /* добавление отступов слева и справа */
+    box-shadow: /*box shadow - теневое оформление, последнее- градиент */
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+header__imgae{
+    height: 48px;
+    width: 48px;
+}
+
+/*Footer style*/
+footer{
+    z-index: 100; /*закрепляем поверх других элементов (100-слой) */
+    background-color: white;
+    box-shadow: /*box shadow - теневое оформление, последнее- градиент */
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
