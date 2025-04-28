@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Тестовый сайт</title>
+    <link rel = 'stylesheet' href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <a href = "{{ url_for('home') }}">На домшнюю страницу</a>
+    <a href = "{{ url_for('comments') }}">Страница комментариев</a>
+    <a href = "{{ url_for('login') }}">Вход</a>
+
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Напишите ваш комментарий</h1>
+    <form method="POST" action="/add_comments">
+        <textarea name="comments" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Отправить комментарий">
+    </form>
+{% endblock %}

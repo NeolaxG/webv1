@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>Вход</h1>
+  <form method="POST">
+    <input type="text" name="username" placeholder="username" required/>
+    <input type="password" name="password" placeholder="password" required/>
+    <button type="submit">Войти</button>
+  </form>
+  <a href="{{ url_for('register') }}">Перейти к регистрации</a>
+
+</body>
+</html>
